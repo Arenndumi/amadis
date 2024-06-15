@@ -436,7 +436,7 @@
 			"attr_id": "st",
 			"adj": -10,
 			"calc": {
-				"value": 4,
+				"value": 5,
 				"points": -60
 			}
 		},
@@ -549,414 +549,13 @@
 			"attr_id": "hp",
 			"adj": 0,
 			"calc": {
-				"value": 15,
-				"current": 15,
+				"value": 16,
+				"current": 16,
 				"points": 0
 			}
 		}
 	],
 	"traits": [
-		{
-			"id": "7e5120f0-1c1c-4e8c-bc1e-9d6a2e5ca823",
-			"type": "trait_container",
-			"children": [
-				{
-					"id": "ad87a60e-2552-4c66-aad5-1e29cb2d8b0c",
-					"type": "trait_container",
-					"children": [
-						{
-							"id": "26852b26-9550-468f-8eb4-9b6e1c8411a8",
-							"type": "trait",
-							"name": "Bestial",
-							"reference": "B124",
-							"tags": [
-								"Disadvantage",
-								"Exotic",
-								"Mental"
-							],
-							"base_points": -10,
-							"calc": {
-								"points": -10
-							}
-						},
-						{
-							"id": "648f08a1-6c59-44a7-aaca-47bb16951986",
-							"type": "trait",
-							"name": "primitive Speak",
-							"reference": "B125",
-							"tags": [
-								"Disadvantage",
-								"Physical"
-							],
-							"base_points": -7,
-							"prereqs": {
-								"type": "prereq_list",
-								"all": true,
-								"prereqs": [
-									{
-										"type": "trait_prereq",
-										"has": false,
-										"name": {
-											"compare": "is",
-											"qualifier": "stuttering"
-										}
-									}
-								]
-							},
-							"calc": {
-								"points": -7
-							}
-						}
-					],
-					"name": "Amadis",
-					"reference": "B263",
-					"container_type": "meta_trait",
-					"calc": {
-						"points": -17
-					}
-				},
-				{
-					"id": "b0cd3533-1992-4ea2-b496-a0932abf8c75",
-					"type": "trait_container",
-					"children": [
-						{
-							"id": "e1f1592e-f0b5-419b-9a66-f5ca5d88e94e",
-							"type": "trait",
-							"name": "Claws, Sharp (Feet)",
-							"reference": "B42",
-							"tags": [
-								"Advantage",
-								"Physical"
-							],
-							"base_points": 5,
-							"weapons": [
-								{
-									"id": "28a7ea5b-2ba1-42f1-81ed-3582d115ddc2",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "cut",
-										"st": "thr"
-									},
-									"usage": "Kick",
-									"reach": "C,1",
-									"defaults": [
-										{
-											"type": "dx",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Brawling",
-											"modifier": -2
-										},
-										{
-											"type": "skill",
-											"name": "Karate",
-											"modifier": -2
-										}
-									],
-									"calc": {
-										"level": 8,
-										"damage": "1d-5 cut"
-									}
-								}
-							],
-							"calc": {
-								"points": 5
-							}
-						},
-						{
-							"id": "24124b98-7997-4ac6-99fe-9f40eccc5afa",
-							"type": "trait",
-							"name": "Decreased Size",
-							"reference": "B17",
-							"tags": [
-								"Physical"
-							],
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "sm",
-									"amount": -1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 0
-							}
-						},
-						{
-							"id": "f8f1904a-1e10-41bb-b99a-2dafd4d4167b",
-							"type": "trait",
-							"name": "Extra Hit Points",
-							"reference": "B16",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"modifiers": [
-								{
-									"id": "5052b972-65cc-42da-a79c-2b9c80949207",
-									"type": "modifier",
-									"name": "Size",
-									"cost": -10,
-									"levels": 1,
-									"disabled": true
-								},
-								{
-									"id": "85b37429-adcf-4bfe-b3ce-9f144c0fa784",
-									"type": "modifier",
-									"name": "No Fine Manipulators",
-									"cost": -40
-								}
-							],
-							"levels": 9,
-							"points_per_level": 2,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "hp",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 11
-							}
-						},
-						{
-							"id": "4267de9b-0531-4f7d-bfc0-9be02c4915d1",
-							"type": "trait",
-							"name": "Increased Dexterity",
-							"reference": "B15",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"modifiers": [
-								{
-									"id": "da93cc51-c841-4f0a-8505-12138491eff7",
-									"type": "modifier",
-									"name": "No Fine Manipulators",
-									"cost": -40
-								}
-							],
-							"levels": 6,
-							"points_per_level": 20,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "dx",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 72
-							}
-						},
-						{
-							"id": "fb0a7b6b-7929-46ba-bd90-06eeff52442e",
-							"type": "trait",
-							"name": "Increased Health",
-							"reference": "B14",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"levels": 6,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "ht",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 60
-							}
-						},
-						{
-							"id": "5fb62009-a6ff-4fcd-a452-c3c9e25a7a4f",
-							"type": "trait",
-							"name": "Increased Intelligence",
-							"reference": "B15",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Mental"
-							],
-							"levels": 4,
-							"points_per_level": 20,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "iq",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 80
-							}
-						},
-						{
-							"id": "b7030272-f91d-4508-869e-9c1c76445e94",
-							"type": "trait",
-							"name": "Increased Strength",
-							"reference": "B14",
-							"tags": [
-								"Advantage",
-								"Attribute",
-								"Physical"
-							],
-							"modifiers": [
-								{
-									"id": "a43fa75a-34b6-4093-b8eb-342cc040d218",
-									"type": "modifier",
-									"name": "No Fine Manipulators",
-									"reference": "B15",
-									"cost": -40
-								},
-								{
-									"id": "ea9ce90e-5d25-40e7-a688-d3cc8bcea0c7",
-									"type": "modifier",
-									"name": "Size",
-									"reference": "B15",
-									"cost": -10,
-									"levels": 1,
-									"disabled": true
-								},
-								{
-									"id": "8375d906-bd0e-450f-9c4b-928ccab61a3f",
-									"type": "modifier",
-									"name": "Super-Effort",
-									"reference": "SU24",
-									"cost": 300,
-									"disabled": true
-								}
-							],
-							"levels": 2,
-							"points_per_level": 10,
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"attribute": "st",
-									"amount": 1,
-									"per_level": true
-								}
-							],
-							"can_level": true,
-							"calc": {
-								"points": 12
-							}
-						},
-						{
-							"id": "f75eb21f-9fc8-4f61-8fd4-c2ec4b0a799c",
-							"type": "trait",
-							"name": "No Fine Manipulators",
-							"reference": "B145",
-							"tags": [
-								"Disadvantage",
-								"Physical"
-							],
-							"base_points": -30,
-							"features": [
-								{
-									"type": "cost_reduction",
-									"attribute": "st",
-									"percentage": 40
-								},
-								{
-									"type": "cost_reduction",
-									"attribute": "dx",
-									"percentage": 40
-								}
-							],
-							"calc": {
-								"points": -30
-							}
-						},
-						{
-							"id": "229c9362-3c81-4412-a1b5-a85666914988",
-							"type": "trait",
-							"name": "Tail",
-							"reference": "TT2:12",
-							"tags": [
-								"Exotic",
-								"Feature",
-								"Physical"
-							],
-							"calc": {
-								"points": 0
-							}
-						},
-						{
-							"id": "dbaca788-4e79-4854-a800-df046aea721f",
-							"type": "trait",
-							"name": "Teeth, Sharp Beak",
-							"reference": "B91",
-							"tags": [
-								"Exotic",
-								"Perk",
-								"Physical"
-							],
-							"base_points": 1,
-							"weapons": [
-								{
-									"id": "0f5aa4ec-5d34-4dbe-8eb6-4f86eb18b2a2",
-									"type": "melee_weapon",
-									"damage": {
-										"type": "pi+",
-										"st": "thr",
-										"base": "-1"
-									},
-									"usage": "Peck",
-									"reach": "C",
-									"defaults": [
-										{
-											"type": "dx"
-										},
-										{
-											"type": "skill",
-											"name": "Brawling"
-										}
-									],
-									"calc": {
-										"level": 10,
-										"damage": "1d-6 pi+"
-									}
-								}
-							],
-							"calc": {
-								"points": 1
-							}
-						}
-					],
-					"open": true,
-					"name": "Attributes",
-					"calc": {
-						"points": 211
-					}
-				}
-			],
-			"name": " bird",
-			"ancestry": "Human",
-			"container_type": "ancestry",
-			"calc": {
-				"points": 194
-			}
-		},
 		{
 			"id": "65cfd700-a655-43c3-837d-29cd329b3fc2",
 			"type": "trait_container",
@@ -1397,15 +996,417 @@
 			}
 		},
 		{
-			"id": "fb13715b-8efa-4507-8143-54d032fcd17b",
+			"id": "a629a2f8-0bab-44b8-bc56-0e7bf027ecbd",
 			"type": "trait_container",
 			"children": [
 				{
-					"id": "fe60a327-576a-4441-bac9-f6bde7aff75c",
+					"id": "2f441d6a-8395-4c4c-8fa9-15609278cbd0",
 					"type": "trait_container",
 					"children": [
 						{
-							"id": "aa947b78-1890-469b-8de9-547316c954d5",
+							"id": "f2161cd6-22ec-4588-97b8-9fe1952b8c51",
+							"type": "trait",
+							"name": "Bestial",
+							"reference": "B124",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "8752066b-dcf4-45d4-a0f4-938537b788a8",
+							"type": "trait",
+							"name": "primitive Speak",
+							"reference": "B125",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -7,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "stuttering"
+										}
+									}
+								]
+							},
+							"calc": {
+								"points": -7
+							}
+						}
+					],
+					"name": "Amadis",
+					"reference": "B263",
+					"container_type": "meta_trait",
+					"calc": {
+						"points": -17
+					}
+				},
+				{
+					"id": "55dfa13a-58e2-42b7-9529-7848b9ba50b0",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "0b2c6726-f561-4b81-a2ca-640e062abc23",
+							"type": "trait",
+							"name": "Claws, Sharp (Feet)",
+							"reference": "B42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 5,
+							"weapons": [
+								{
+									"id": "28a7ea5b-2ba1-42f1-81ed-3582d115ddc2",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cut",
+										"st": "thr"
+									},
+									"usage": "Kick",
+									"reach": "C,1",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"level": 8,
+										"damage": "1d-4 cut"
+									}
+								}
+							],
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "8af156ed-b7b8-4897-979f-fc2c5ce25acc",
+							"type": "trait",
+							"name": "Decreased Size",
+							"reference": "B17",
+							"tags": [
+								"Physical"
+							],
+							"levels": 3,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "sm",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "c21ef406-1d17-474f-8cbf-90b208bacdc8",
+							"type": "trait",
+							"name": "Extra Hit Points",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "5052b972-65cc-42da-a79c-2b9c80949207",
+									"type": "modifier",
+									"name": "Size",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "85b37429-adcf-4bfe-b3ce-9f144c0fa784",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40
+								}
+							],
+							"levels": 9,
+							"points_per_level": 2,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "hp",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 11
+							}
+						},
+						{
+							"id": "ddb2ce3b-2786-427b-944c-85e14684fa25",
+							"type": "trait",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "da93cc51-c841-4f0a-8505-12138491eff7",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40
+								}
+							],
+							"levels": 6,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 72
+							}
+						},
+						{
+							"id": "e443c07b-e00b-4a3a-8414-748d9e32d60e",
+							"type": "trait",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"levels": 6,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 60
+							}
+						},
+						{
+							"id": "476f920b-773a-42df-bf6b-434917a9ad21",
+							"type": "trait",
+							"name": "Increased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"levels": 4,
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 80
+							}
+						},
+						{
+							"id": "8eebdf06-2232-4344-932d-09a5af7aa217",
+							"type": "trait",
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "a43fa75a-34b6-4093-b8eb-342cc040d218",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40
+								},
+								{
+									"id": "ea9ce90e-5d25-40e7-a688-d3cc8bcea0c7",
+									"type": "modifier",
+									"name": "Size",
+									"reference": "B15",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "8375d906-bd0e-450f-9c4b-928ccab61a3f",
+									"type": "modifier",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"levels": 3,
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 18
+							}
+						},
+						{
+							"id": "1e1e522b-73e4-47dd-9ff3-f8f5c025c11a",
+							"type": "trait",
+							"name": "No Fine Manipulators",
+							"reference": "B145",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"base_points": -30,
+							"features": [
+								{
+									"type": "cost_reduction",
+									"attribute": "st",
+									"percentage": 40
+								},
+								{
+									"type": "cost_reduction",
+									"attribute": "dx",
+									"percentage": 40
+								}
+							],
+							"calc": {
+								"points": -30
+							}
+						},
+						{
+							"id": "6943553e-c756-4593-bca1-4814983a3109",
+							"type": "trait",
+							"name": "Tail",
+							"reference": "TT2:12",
+							"tags": [
+								"Exotic",
+								"Feature",
+								"Physical"
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "b490ac8b-87fd-4c89-9b70-fcbb8c7011da",
+							"type": "trait",
+							"name": "Teeth, Sharp Beak",
+							"reference": "B91",
+							"tags": [
+								"Exotic",
+								"Perk",
+								"Physical"
+							],
+							"base_points": 1,
+							"weapons": [
+								{
+									"id": "0f5aa4ec-5d34-4dbe-8eb6-4f86eb18b2a2",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "pi+",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Peck",
+									"reach": "C",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									],
+									"calc": {
+										"level": 10,
+										"damage": "1d-5 pi+"
+									}
+								}
+							],
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"open": true,
+					"name": "Attributes",
+					"calc": {
+						"points": 217
+					}
+				}
+			],
+			"name": " bird",
+			"ancestry": "Human",
+			"container_type": "ancestry",
+			"calc": {
+				"points": 200
+			}
+		},
+		{
+			"id": "594f9d1d-46de-4fe2-9a2f-2a86ad0ba747",
+			"type": "trait_container",
+			"children": [
+				{
+					"id": "655a861f-a6f8-430f-b8c1-a4d29ae13618",
+					"type": "trait_container",
+					"children": [
+						{
+							"id": "ae5d0d4b-0f84-4e7e-ad7b-7d2439ed078d",
 							"type": "trait",
 							"name": "Damage Resistance",
 							"reference": "B47",
@@ -1712,7 +1713,7 @@
 							}
 						},
 						{
-							"id": "a043d135-2329-457a-8059-9245814d7636",
+							"id": "41ea65d6-4970-49ab-bef2-ccf05db6be64",
 							"type": "trait",
 							"name": "Increased Dexterity",
 							"reference": "B15",
@@ -1745,7 +1746,7 @@
 							}
 						},
 						{
-							"id": "2d125321-c9ff-43fc-be41-86c6a43ec515",
+							"id": "c60b8ac9-8635-4f81-81fc-bcf074eca376",
 							"type": "trait",
 							"name": "Increased Health",
 							"reference": "B14",
@@ -1770,7 +1771,7 @@
 							}
 						},
 						{
-							"id": "17ea0a31-6215-40da-8db8-c2ce6f820c6e",
+							"id": "855e4dda-e20a-4ec1-9a7b-91eeedfde8f3",
 							"type": "trait",
 							"name": "Increased Strength",
 							"reference": "B14",
@@ -1821,7 +1822,7 @@
 							}
 						},
 						{
-							"id": "cae6feed-d1ab-45b3-8a50-0f5d2c5441c6",
+							"id": "72e98341-bc71-4297-9650-531da758a4a9",
 							"type": "trait",
 							"name": "Slippery",
 							"reference": "B85",
@@ -1860,7 +1861,7 @@
 							}
 						},
 						{
-							"id": "8d1a3586-b0e1-4961-823f-81ead8771923",
+							"id": "2931957e-b266-48b3-9368-39e8a273ca34",
 							"type": "trait",
 							"name": "Temperature Tolerance",
 							"reference": "B93",
@@ -1877,7 +1878,7 @@
 							}
 						},
 						{
-							"id": "70183e91-44a1-4287-9cc2-c18d40e45a1d",
+							"id": "80818680-68e6-428b-ba0e-bda058ec1129",
 							"type": "trait",
 							"name": "Terrain Adaptation (Ice)",
 							"reference": "B93",
@@ -1918,11 +1919,11 @@
 					}
 				},
 				{
-					"id": "ea6c246f-5b20-4647-8ec7-2478755d6610",
+					"id": "ccfc5ffe-21a4-4c02-8f41-e588b42420f4",
 					"type": "trait_container",
 					"children": [
 						{
-							"id": "f03a7feb-a62c-4d95-b9ac-d373e8ade0b7",
+							"id": "69200779-54a8-48f7-9614-951176ab9ce0",
 							"type": "trait",
 							"name": "cold spit",
 							"reference": "B430",
@@ -2310,7 +2311,7 @@
 					}
 				},
 				{
-					"id": "5697e9f9-3477-4d9d-aad0-e898916bbf72",
+					"id": "547e3be8-c9a8-45fe-adfe-81a7384a5d5c",
 					"type": "trait_container",
 					"name": "special",
 					"calc": {
@@ -2318,7 +2319,7 @@
 					}
 				}
 			],
-			"name": "Glacial",
+			"name": "Ice",
 			"container_type": "meta_trait",
 			"calc": {
 				"points": 60
@@ -2404,11 +2405,11 @@
 		}
 	],
 	"created_date": "2020-05-16T00:00:00-07:00",
-	"modified_date": "2024-06-12T16:55:17-03:00",
+	"modified_date": "2024-06-14T21:05:32-03:00",
 	"calc": {
-		"swing": "1d-4",
-		"thrust": "1d-5",
-		"basic_lift": "3.2 lb",
+		"swing": "1d-3",
+		"thrust": "1d-4",
+		"basic_lift": "5 lb",
 		"move": [
 			4,
 			3,
