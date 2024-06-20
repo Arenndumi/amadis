@@ -8932,7 +8932,7 @@
 													"cost": -40
 												}
 											],
-											"levels": 12,
+											"levels": 7,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -8944,7 +8944,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 144
+												"points": 84
 											}
 										},
 										{
@@ -8957,7 +8957,7 @@
 												"Attribute",
 												"Physical"
 											],
-											"levels": 12,
+											"levels": 5,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -8969,7 +8969,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 120
+												"points": 50
 											}
 										},
 										{
@@ -8982,7 +8982,7 @@
 												"Attribute",
 												"Mental"
 											],
-											"levels": 6,
+											"levels": 4,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -8994,7 +8994,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 120
+												"points": 80
 											}
 										},
 										{
@@ -9033,7 +9033,7 @@
 													"disabled": true
 												}
 											],
-											"levels": 12,
+											"levels": 3,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -9045,7 +9045,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 72
+												"points": 18
 											}
 										},
 										{
@@ -9109,7 +9109,7 @@
 									"open": true,
 									"name": "Attributes",
 									"calc": {
-										"points": 491
+										"points": 267
 									}
 								},
 								{
@@ -9189,7 +9189,7 @@
 							"reference": "TT2:10",
 							"container_type": "ancestry",
 							"calc": {
-								"points": 424
+								"points": 200
 							}
 						},
 						{
@@ -15735,30 +15735,6 @@
 											}
 										},
 										{
-											"id": "97c76db1-a362-488d-a4a7-1636c88fd780",
-											"type": "trait",
-											"name": "Increased Basic Move",
-											"reference": "B17",
-											"tags": [
-												"Advantage",
-												"Physical"
-											],
-											"levels": 2,
-											"points_per_level": 5,
-											"features": [
-												{
-													"type": "attribute_bonus",
-													"attribute": "basic_move",
-													"amount": 1,
-													"per_level": true
-												}
-											],
-											"can_level": true,
-											"calc": {
-												"points": 10
-											}
-										},
-										{
 											"id": "292de8dd-8d82-4928-8bb8-331b28786aa2",
 											"type": "trait",
 											"name": "Increased Dexterity",
@@ -15776,7 +15752,7 @@
 													"cost": -40
 												}
 											],
-											"levels": 17,
+											"levels": 7,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -15788,7 +15764,48 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 204
+												"points": 84
+											}
+										},
+										{
+											"id": "300a06a4-1452-41d9-a530-a035a66ad4e9",
+											"type": "trait",
+											"name": "Extra Hit Points",
+											"reference": "B16",
+											"tags": [
+												"Advantage",
+												"Attribute",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "5052b972-65cc-42da-a79c-2b9c80949207",
+													"type": "modifier",
+													"name": "Size",
+													"cost": -10,
+													"levels": 1,
+													"disabled": true
+												},
+												{
+													"id": "85b37429-adcf-4bfe-b3ce-9f144c0fa784",
+													"type": "modifier",
+													"name": "No Fine Manipulators",
+													"cost": -40
+												}
+											],
+											"levels": 1,
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "hp",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"calc": {
+												"points": 2
 											}
 										},
 										{
@@ -15801,7 +15818,7 @@
 												"Attribute",
 												"Physical"
 											],
-											"levels": 11,
+											"levels": 5,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -15813,7 +15830,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 110
+												"points": 50
 											}
 										},
 										{
@@ -15826,7 +15843,7 @@
 												"Attribute",
 												"Mental"
 											],
-											"levels": 6,
+											"levels": 4,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -15838,33 +15855,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 120
-											}
-										},
-										{
-											"id": "794ac9de-153e-4d20-90c6-45f4eb9e6a5d",
-											"type": "trait",
-											"name": "Increased Perception",
-											"reference": "B16",
-											"tags": [
-												"Advantage",
-												"Attribute",
-												"Mental",
-												"Physical"
-											],
-											"levels": 7,
-											"points_per_level": 5,
-											"features": [
-												{
-													"type": "attribute_bonus",
-													"attribute": "per",
-													"amount": 1,
-													"per_level": true
-												}
-											],
-											"can_level": true,
-											"calc": {
-												"points": 35
+												"points": 80
 											}
 										},
 										{
@@ -15903,7 +15894,7 @@
 													"disabled": true
 												}
 											],
-											"levels": 5,
+											"levels": 2,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -15915,32 +15906,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 30
-											}
-										},
-										{
-											"id": "644ccca5-e38a-4628-a7ac-61a92b8cfc16",
-											"type": "trait",
-											"name": "Increased Will",
-											"reference": "B16",
-											"tags": [
-												"Advantage",
-												"Attribute",
-												"Mental"
-											],
-											"levels": 5,
-											"points_per_level": 5,
-											"features": [
-												{
-													"type": "attribute_bonus",
-													"attribute": "will",
-													"amount": 1,
-													"per_level": true
-												}
-											],
-											"can_level": true,
-											"calc": {
-												"points": 25
+												"points": 12
 											}
 										},
 										{
@@ -16014,7 +15980,7 @@
 									"open": true,
 									"name": "Attributes",
 									"calc": {
-										"points": 558
+										"points": 252
 									}
 								},
 								{
@@ -16193,7 +16159,7 @@
 											}
 										}
 									],
-									"name": "Meta-Trait: Wild Animal",
+									"name": "Amadis",
 									"reference": "B263",
 									"container_type": "meta_trait",
 									"calc": {
@@ -16204,7 +16170,7 @@
 							"name": "rat",
 							"container_type": "ancestry",
 							"calc": {
-								"points": 506
+								"points": 200
 							}
 						},
 						{
@@ -17496,6 +17462,47 @@
 											}
 										},
 										{
+											"id": "0c2408e8-9064-43ab-853c-b5c4259dc9af",
+											"type": "trait",
+											"name": "Extra Hit Points",
+											"reference": "B16",
+											"tags": [
+												"Advantage",
+												"Attribute",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "5052b972-65cc-42da-a79c-2b9c80949207",
+													"type": "modifier",
+													"name": "Size",
+													"cost": -10,
+													"levels": 1,
+													"disabled": true
+												},
+												{
+													"id": "85b37429-adcf-4bfe-b3ce-9f144c0fa784",
+													"type": "modifier",
+													"name": "No Fine Manipulators",
+													"cost": -40
+												}
+											],
+											"levels": 4,
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "hp",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"calc": {
+												"points": 5
+											}
+										},
+										{
 											"id": "0cd8c64e-f869-4159-8e2f-f31461854801",
 											"type": "trait",
 											"name": "Increased Dexterity",
@@ -17513,7 +17520,7 @@
 													"cost": -40
 												}
 											],
-											"levels": 17,
+											"levels": 8,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -17525,7 +17532,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 204
+												"points": 96
 											}
 										},
 										{
@@ -17538,7 +17545,7 @@
 												"Attribute",
 												"Physical"
 											],
-											"levels": 13,
+											"levels": 5,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -17550,7 +17557,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 130
+												"points": 50
 											}
 										},
 										{
@@ -17563,7 +17570,7 @@
 												"Attribute",
 												"Mental"
 											],
-											"levels": 6,
+											"levels": 4,
 											"points_per_level": 20,
 											"features": [
 												{
@@ -17575,33 +17582,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 120
-											}
-										},
-										{
-											"id": "0f5b654f-b4e0-4f02-9630-ace3835d4b27",
-											"type": "trait",
-											"name": "Increased Perception",
-											"reference": "B16",
-											"tags": [
-												"Advantage",
-												"Attribute",
-												"Mental",
-												"Physical"
-											],
-											"levels": 8,
-											"points_per_level": 5,
-											"features": [
-												{
-													"type": "attribute_bonus",
-													"attribute": "per",
-													"amount": 1,
-													"per_level": true
-												}
-											],
-											"can_level": true,
-											"calc": {
-												"points": 40
+												"points": 80
 											}
 										},
 										{
@@ -17640,7 +17621,7 @@
 													"disabled": true
 												}
 											],
-											"levels": 5,
+											"levels": 4,
 											"points_per_level": 10,
 											"features": [
 												{
@@ -17652,32 +17633,7 @@
 											],
 											"can_level": true,
 											"calc": {
-												"points": 30
-											}
-										},
-										{
-											"id": "88c2b676-435d-4f69-8f6c-32e769743de9",
-											"type": "trait",
-											"name": "Increased Will",
-											"reference": "B16",
-											"tags": [
-												"Advantage",
-												"Attribute",
-												"Mental"
-											],
-											"levels": 7,
-											"points_per_level": 5,
-											"features": [
-												{
-													"type": "attribute_bonus",
-													"attribute": "will",
-													"amount": 1,
-													"per_level": true
-												}
-											],
-											"can_level": true,
-											"calc": {
-												"points": 35
+												"points": 24
 											}
 										},
 										{
@@ -17747,9 +17703,10 @@
 											}
 										}
 									],
+									"open": true,
 									"name": "Attributes",
 									"calc": {
-										"points": 561
+										"points": 257
 									}
 								},
 								{
@@ -17882,7 +17839,7 @@
 							"name": "snake venous",
 							"container_type": "ancestry",
 							"calc": {
-								"points": 504
+								"points": 200
 							}
 						},
 						{
@@ -18102,7 +18059,7 @@
 											"tags": [
 												"Physical"
 											],
-											"levels": 4,
+											"levels": 3,
 											"features": [
 												{
 													"type": "attribute_bonus",
@@ -21566,7 +21523,7 @@
 					"open": true,
 					"name": "especie",
 					"calc": {
-						"points": 9413
+						"points": 8579
 					}
 				},
 				{
@@ -32956,7 +32913,7 @@
 			"open": true,
 			"name": "\"leveled\"",
 			"calc": {
-				"points": 11013
+				"points": 10179
 			}
 		},
 		{
@@ -34541,23 +34498,6 @@
 					]
 				},
 				{
-					"id": "74bef32d-ffac-4169-865b-b5ccc39aa89f",
-					"type": "skill",
-					"name": "Running",
-					"reference": "B218",
-					"tags": [
-						"Athletic"
-					],
-					"difficulty": "ht/a",
-					"points": 2,
-					"defaults": [
-						{
-							"type": "ht",
-							"modifier": -5
-						}
-					]
-				},
-				{
 					"id": "fac98ffb-dee7-456a-813d-206065aaca7e",
 					"type": "skill",
 					"name": "Brawling",
@@ -34612,26 +34552,6 @@
 					]
 				},
 				{
-					"id": "956e104d-06ac-460c-83b2-13f0d48a2e72",
-					"type": "skill",
-					"name": "Swimming",
-					"reference": "B224",
-					"tags": [
-						"Athletic",
-						"Exploration",
-						"Outdoor"
-					],
-					"difficulty": "ht/e",
-					"points": 2,
-					"encumbrance_penalty_multiplier": 2,
-					"defaults": [
-						{
-							"type": "ht",
-							"modifier": -4
-						}
-					]
-				},
-				{
 					"id": "5552f385-7a57-432f-9bac-42c1a37c03da",
 					"type": "skill",
 					"name": "Climbing",
@@ -34661,6 +34581,26 @@
 					]
 				},
 				{
+					"id": "956e104d-06ac-460c-83b2-13f0d48a2e72",
+					"type": "skill",
+					"name": "Swimming",
+					"reference": "B224",
+					"tags": [
+						"Athletic",
+						"Exploration",
+						"Outdoor"
+					],
+					"difficulty": "ht/e",
+					"points": 2,
+					"encumbrance_penalty_multiplier": 2,
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -4
+						}
+					]
+				},
+				{
 					"id": "653d4ddb-e0b8-47ad-b4f5-a5bccf1949f3",
 					"type": "skill",
 					"name": "Jumping",
@@ -34676,27 +34616,19 @@
 			"name": "skills"
 		},
 		{
-			"id": "b173d946-db30-4bde-8e4d-bb8c742de47b",
+			"id": "74bef32d-ffac-4169-865b-b5ccc39aa89f",
 			"type": "skill",
-			"name": "Innate Attack",
-			"reference": "B201",
+			"name": "Running",
+			"reference": "B218",
 			"tags": [
-				"Combat",
-				"Ranged Combat",
-				"Weapon"
+				"Athletic"
 			],
-			"specialization": "Projectile",
-			"difficulty": "dx/e",
+			"difficulty": "ht/a",
 			"points": 2,
 			"defaults": [
 				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Innate Attack",
-					"modifier": -2
+					"type": "ht",
+					"modifier": -5
 				}
 			]
 		},
@@ -34774,59 +34706,29 @@
 					"modifier": -2
 				}
 			]
-		}
-	],
-	"spells": [
+		},
 		{
-			"id": "9aba4da0-59d2-4c6f-a5cc-1802277c3c8e",
-			"type": "spell",
-			"name": "Pollen Cloud",
-			"reference": "M162",
+			"id": "b173d946-db30-4bde-8e4d-bb8c742de47b",
+			"type": "skill",
+			"name": "Innate Attack",
+			"reference": "B201",
 			"tags": [
-				"Plant"
+				"Combat",
+				"Ranged Combat",
+				"Weapon"
 			],
-			"difficulty": "iq/h",
-			"college": [
-				"Plant"
-			],
-			"power_source": "Arcane",
-			"spell_class": "Area",
-			"resist": "HT",
-			"casting_cost": "1",
-			"maintenance_cost": "-",
-			"casting_time": "1 sec",
-			"duration": "5 min#",
-			"points": 1,
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "spell_prereq",
-						"sub_type": "name",
-						"has": true,
-						"qualifier": {
-							"compare": "is",
-							"qualifier": "shape plant"
-						},
-						"quantity": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					}
-				]
-			},
-			"weapons": [
+			"specialization": "Projectile",
+			"difficulty": "dx/e",
+			"points": 2,
+			"defaults": [
 				{
-					"id": "d44d2788-f6da-4e85-a431-005dadfa2070",
-					"type": "melee_weapon",
-					"damage": {
-						"type": "Cough/Sneeze"
-					},
-					"usage": "Area",
-					"calc": {
-						"damage": "Cough/Sneeze"
-					}
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Innate Attack",
+					"modifier": -2
 				}
 			]
 		}
